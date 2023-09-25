@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: CropHarmony
+  productName: CropHarmonyHorse
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -137,6 +137,9 @@ PlayerSettings:
   bundleVersion: 0.1
   preloadedAssets:
   - {fileID: 11400000, guid: c8f0196161b7671428572892871b32bd, type: 2}
+  - {fileID: 11400000, guid: 5ea84c2c34f9e0d45b9d49d5da119d84, type: 2}
+  - {fileID: -1774234537577741485, guid: 2306b16d5f0e19e4d9326cdf5eff0148, type: 2}
+  - {fileID: 5569776990762827431, guid: 21b3fbbf461fe3747be7e70be6efe56c, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -156,7 +159,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.CropHarmony
+    Android: com.DefaultCompany.CropHarmonyHorse
     Standalone: com.DefaultCompany.CropHarmony
   buildNumber:
     Standalone: 0
