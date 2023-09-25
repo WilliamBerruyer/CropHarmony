@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/PolygonFarm/Demo/Demo.unity
+    guid: 28ac9a59020c6bc459f797acd217859a
   - enabled: 1
+    path: Assets/Scenes/Horse.unity
+    guid: eb04c4fcd020d46dc90b3bcce3accebc
+  - enabled: 0
     path: Assets/Scenes/Apple.unity
     guid: 07051b71b86f684498ee3505ea836df6
   m_configObjects:
