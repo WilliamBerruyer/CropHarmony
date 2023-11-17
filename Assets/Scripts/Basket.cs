@@ -11,6 +11,8 @@ public class Basket : MonoBehaviour
 
     public GameObject[] apples;
     public GameObject box1;
+    public GameObject endDialog;
+    public AudioSource audiosource;
 
     // Start is called before the first frame update
     void Start()
@@ -29,19 +31,25 @@ public class Basket : MonoBehaviour
         
         if (collision.gameObject.CompareTag("Apple"))
         {
+            if(appleCounter == 17)
+            {
+                end();
+            }
+
             Debug.Log("Entered");
+            audiosource.Play();
             appleCounter++;
             boxCounter++;
             counterNumber.text = appleCounter.ToString();
             Destroy(collision.gameObject);
-            if(boxCounter <= 8 && boxCounter > 0)
+            if(boxCounter <= 9 && boxCounter > 0)
             {
-                apples[boxCounter].SetActive(true);
+                apples[boxCounter - 1].SetActive(true);
 
             }
-            else if(boxCounter > 8)
+            else if(boxCounter > 9)
             {
-                for (int i = 0; i < 8; i++)
+                for (int i = 0; i < 9; i++)
                 {
                     apples[i].SetActive(false);
                 }
@@ -49,6 +57,11 @@ public class Basket : MonoBehaviour
                 boxCounter = 0;
             }
         }
-        
+    }
+
+    private void end()
+    {
+        endDialog.SetActive(true);
+        //play a sound
     }
 }

@@ -15,7 +15,7 @@ public class VoicePlayerIntro : MonoBehaviour
     void Start()
     {
         
-        audiosource.Play();
+        //audiosource.Play();
         StartCoroutine(WaitForSound());
     }
 
@@ -34,27 +34,27 @@ public class VoicePlayerIntro : MonoBehaviour
             obj.SetActive(true);
             if(eyes.gameObject.transform.localPosition.y > 1.75f)
             {
-                tree.transform.position = new Vector3(-112.614f, 2.40f, -14.835f);
-                Debug.Log("Tree height set to 2.50");
+                tree.transform.position = new Vector3(130.1517f, 9.1f, 120.2001f);
+                Debug.Log("Tree height set to 9.1");
             } else if (eyes.gameObject.transform.localPosition.y < 1.75f && eyes.gameObject.transform.localPosition.y > 1.65f)
             {
-                tree.transform.position = new Vector3(-112.614f, 2.30f, -14.835f);
-                Debug.Log("Tree height set to 2.40");
+                tree.transform.position = new Vector3(130.1517f, 9f, 120.2001f);
+                Debug.Log("Tree height set to 9");
             }
             else if (eyes.gameObject.transform.localPosition.y < 1.65f && eyes.gameObject.transform.localPosition.y > 1.55f)
             {
-                tree.transform.position = new Vector3(-112.614f, 2.20f, -14.835f);
-                Debug.Log("Tree height set to 2.30");
+                tree.transform.position = new Vector3(130.1517f, 8.9f, 120.2001f);
+                Debug.Log("Tree height set to 8.9");
             }
             else if (eyes.gameObject.transform.localPosition.y < 1.55f && eyes.gameObject.transform.localPosition.y > 1.45f)
             {
-                tree.transform.position = new Vector3(-112.614f, 2.10f, -14.835f);
-                Debug.Log("Tree height set to 2.20");
+                tree.transform.position = new Vector3(130.1517f, 8.8f, 120.2001f);
+                Debug.Log("Tree height set to 8.8");
             }
             else if (eyes.gameObject.transform.localPosition.y < 1.55f)
             {
-                tree.transform.position = new Vector3(-112.614f, 2f, -14.835f);
-                Debug.Log("Tree height set to 2");
+                tree.transform.position = new Vector3(130.1517f, 8.7f, 120.2001f);
+                Debug.Log("Tree height set to 8.7");
             }
         }
             
