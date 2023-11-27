@@ -13,6 +13,7 @@ public class Basket : MonoBehaviour
     public GameObject box1;
     public GameObject endDialog;
     public AudioSource audiosource;
+    public AudioSource finalSound;
 
     // Start is called before the first frame update
     void Start()
@@ -44,7 +45,7 @@ public class Basket : MonoBehaviour
             Destroy(collision.gameObject);
             if(boxCounter <= 9 && boxCounter > 0)
             {
-                apples[boxCounter - 1].SetActive(true);
+                apples[boxCounter].SetActive(true);
 
             }
             else if(boxCounter > 9)
@@ -62,6 +63,6 @@ public class Basket : MonoBehaviour
     private void end()
     {
         endDialog.SetActive(true);
-        //play a sound
+        finalSound.Play();
     }
 }

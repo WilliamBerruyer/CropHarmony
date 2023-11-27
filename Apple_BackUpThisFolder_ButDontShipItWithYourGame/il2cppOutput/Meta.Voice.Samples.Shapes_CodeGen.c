@@ -76,7 +76,7 @@ static const int32_t s_InvokerIndices[15] =
 	8285,
 	8285,
 	8285,
-	12210,
+	12211,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Meta_Voice_Samples_Shapes_CodeGenModule;
 const Il2CppCodeGenModule g_Meta_Voice_Samples_Shapes_CodeGenModule = 

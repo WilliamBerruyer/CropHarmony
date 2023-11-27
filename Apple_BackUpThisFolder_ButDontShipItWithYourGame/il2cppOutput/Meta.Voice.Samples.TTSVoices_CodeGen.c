@@ -419,7 +419,7 @@ static const int32_t s_InvokerIndices[114] =
 	6519,
 	8285,
 	8285,
-	12210,
+	12211,
 	8285,
 	8285,
 	8285,
@@ -470,7 +470,7 @@ static const int32_t s_InvokerIndices[114] =
 	8285,
 	6558,
 	8285,
-	12210,
+	12211,
 	8285,
 	5851,
 };
